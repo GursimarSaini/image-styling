@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href=".." class="w3-bar-item w3-button w3-theme-l1">FOUXA</a>
+
+    <a href=".." class="w3-bar-item w3-button w3-hide-small w3-hover-white">Home</a>
+    <a href="../articles" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Articles</a>
+    <a href="../education.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Education</a>
+    <a href=../loginsystem class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Login</a>
+    <a href="../contactform" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Contact US</a>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item w3-text-orange"><b>Six Week Summer Training</b></h4>
+  <a  class="w3-bar-item w3-text-blue w3-button w3-color-black w3-hover-black" href="index.html">First week</a>
+  <a style="background-color:black" class="w3-bar-item w3-button w3-text-orange w3-hover-black" href="secondweek.html">Second week</a>
+  <a class="w3-bar-item w3-button w3-text-indigo w3-hover-black" href="thirdweek.html">Third week</a>
+  <a class="w3-bar-item w3-button w3-text-purple w3-hover-black" href="fourthweek.html">Fourth week</a>
+   <a class="w3-bar-item w3-button  w3-text-red w3-hover-black" href="fifthweek.html">Fifth week</a>
+   <a class="w3-bar-item w3-button w3-text-green w3-hover-black" href="sixthweek.html">Sixth week</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-orange  ">10 June</h1>
+      <p class="w3-text-orange  ">Introduction to PHP:<BR>
+        PHP is a widely-used, open source scripting language<br>
+        PHP scripts are executed on the server<br>PHP files can contain text, HTML, CSS, JavaScript, and PHP code<br>
+        PHP code is executed on the server, and the result is returned to the browser as plain HTML<br>
+        PHP files have extension ".php"<br></p>
+    </div>
+
+  </div>
+
+  <div class="w3-row">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-orange">11 june</h1>
+      <p class="w3-text-orange"><b>Basic PHP Syntax:<b><br>A PHP script can be placed anywhere in the document<br>A PHP script starts with <?php and ends with ?><br>The default file extension for PHP files is ".php"<br>A comment in PHP code is a line that is not executed as a part of the program. Its only purpose is to be read by someone who is looking at the code.<br></p>
+    </div>
+
+  </div>
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-orange">12 june</h1>
+      <p class="w3-text-orange"><b>PHP Variables:<b><br> Variables are "containers" for storing information.<br>A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume)<br>Output Variables:<br>The PHP echo statement is often used to output data to the screen.
+        <br>PHP is a Loosely Typed Language
+        <b><br>PHP Variables Scope<b><br>PHP has three different variable scopes:<br>
+
+local<br>
+global<br>
+static</p>
+    </div>
+
+  </div>
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-orange">13 june</h1>
+      <p class="w3-text-orange">
+<b>PHP echo and print Statements<b><br>With PHP, there are two basic ways to get output: echo and print<br>echo has no return value while print has a return value of 1<br><b>PHP Data Types<b><br>PHP supports the following data types:<br>
+
+String<br>
+Integer<br><br>
+Float (floating point numbers - also called double)<br>
+Boolean<br>
+Array<br>
+Object<br>
+NULL<br>
+Resource<br><b>PHP String<b><br>A string is a sequence of characters, like "Hello world!".
+
+A string can be any text inside quotes. You can use single or double quotes<br><b>PHP integer<b><br>Rules for integers:<br>
+
+An integer must have at least one digit<br>
+An integer must not have a decimal point<br>
+An integer can be either positive or negative<br>
+Integers can be specified in: decimal (base 10), hexadecimal (base 16), octal (base 8), or binary (base 2) notation<br>
+PHP Float<br>PHP Boolean<br>PHP Array<br>PHP NULL Value<br></p>
+    </div>
+
+  </div>
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-orange">14 june</h1>
+      <p class="w3-text-orange" ><b>PHP Operators<b><br>PHP divides the operators in the following groups:<br>
+
+Arithmetic operators<br>
+Assignment operators<br>
+Comparison operators<br>
+Increment/Decrement operators<br>
+Logical operators<br>
+String operators<br>
+Array operators<br>
+Conditional assignment operators<br></p>
+    </div>
+
+  </div>
+
+
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
